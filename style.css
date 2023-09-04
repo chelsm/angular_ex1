@@ -1,0 +1,146 @@
+:root {
+	--dark-purple: #14213D;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #5F4B8B;
+	color: #fff;
+	text-align: center;
+	padding: 100px 10%;
+}
+
+
+header h1{
+	font-size: 55px;
+}
+
+header p{
+	font-size: 25px;
+}
+
+.title-section{
+	font-size: 35px;
+}
+
+.presentation {
+	background-color: #fff;
+	color: #5F4B8B;
+	text-align: center;
+	padding: 100px 10%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: center;
+}
+
+.button {
+	color: var(--dark-purple);
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.button-download {
+	position: absolute;
+	top: -20px;
+	left: 10%;
+	background-color: #FCA311;
+	cursor: pointer;
+	border: none;
+}
+
+.button-download:hover {
+	background-color: #c18018;
+}
+
+.presentation-title {
+	margin: 0;
+	color: var(--dark-purple);
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.presentation-section {
+	display: flex;
+	color: #000;
+	gap: 50px;
+	justify-content: center;
+}
+
+.presentation-article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.presentation-article h3,
+.presentation-article p,
+.informations h2,
+.informations p {
+	margin: 0;
+	padding: 0;
+	text-align: initial;
+}
+
+
+.informations {
+	background-color: #E5E5E5;
+	color: var(--dark-purple);
+	text-align: center;
+	padding: 100px 10%;
+	position: relative;
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.informations-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	width: 50%;
+}
+
+.gif-excellent {
+	max-width: 50%;
+	height: auto;
+	max-height: 400px;
+}
+
+@media (max-width: 800px) {
+
+	.presentation-section,
+	.informations {
+		flex-direction: column;
+	}
+
+	.informations-container,
+	.presentation-article{
+		width: 100%;
+	}
+
+	.presentation-title {
+		text-align: initial;
+	}
+
+	header h1{
+		font-size: 48px;
+	}
+	
+	header p{
+		font-size: 18px;
+	}
+	
+	.title-section{
+		font-size: 28px;
+	}
+
+}
